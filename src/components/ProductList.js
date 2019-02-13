@@ -37,7 +37,6 @@ class ProductList extends Component {
                             </CSSTransition>
                         ))
                     }
-
                 </TransitionGroup>
             </ul>
         );
