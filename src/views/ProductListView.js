@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ProductService } from "../services/ProductService";
 import { Channel } from "../services/EventService";
 import ProductList from "../components/ProductList";
+import {FormattedMessage} from 'react-intl';
 
 class ProductListView extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class ProductListView extends Component {
     const { state } = this;
     return (
       <div>
-        <h1>Lista de Produtos</h1>
+        <h1><FormattedMessage id="List of Product" /></h1>
         <ProductList products={state.products} />
       </div>
     );
